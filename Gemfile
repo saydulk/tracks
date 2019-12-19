@@ -1,20 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~>4.1.11'
-gem 'sass-rails', '~>4.0'
-gem 'coffee-rails', '~>4.0'
+gem 'rails', '~> 4.2.0'
+gem 'sass-rails', '~> 4.0', '>= 4.0.4'
+gem 'coffee-rails', '~> 4.1', '>= 4.1.0'
 
 #gem 'json'
 
 # todo: remove xml api
-gem 'actionpack-xml_parser', '>=1.0.1'
+gem 'actionpack-xml_parser', '>= 1.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', group: :therubyracer
 
 gem 'uglifier', '>=1.3.0'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 
 # you may comment out the database driver(s) you will not be using.
 # This will prevent a native build of the driver. Building native drivers is not
@@ -29,9 +29,9 @@ gem "will_paginate"
 gem "acts_as_list"
 gem "aasm"
 gem "htmlentities"
-gem "swf_fu"
-gem "rails_autolink"
-gem 'thin'
+gem "swf_fu", ">= 2.0.4"
+gem "rails_autolink", ">= 1.1.6"
+gem 'thin', '>= 1.6.3'
 gem 'paperclip'
 
 # To use ActiveModel has_secure_password
@@ -50,18 +50,18 @@ group :development do
   gem "spring-commands-cucumber"
   gem "yard"
 
-  gem 'tolk', '~> 1.6.0'
+  gem 'tolk', '~> 1.7.0'
 
   gem "bullet"
-  gem "rack-mini-profiler"
-  gem "rack-dev-mark"
+  gem "rack-mini-profiler", ">= 0.9.2"
+  gem "rack-dev-mark", ">= 0.7.3"
   gem "activerecord-deprecated_finders"
 end
 
 group :test do
-  gem "factory_girl_rails"
-  gem "capybara"
-  gem "cucumber-rails", :require => false
+  gem "factory_girl_rails", ">= 4.5.0"
+  gem "capybara", ">= 2.4.4"
+  gem "cucumber-rails", ">= 1.4.2", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"
   gem "mocha", :require => false
