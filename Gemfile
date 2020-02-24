@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~>4.1.11'
-gem 'sass-rails', '~>4.0'
-gem 'coffee-rails', '~>4.0'
+gem 'rails', '~> 4.1.11'
+gem 'sass-rails', '~> 4.0', '>= 4.0.4'
+gem 'coffee-rails', '~> 4.1', '>= 4.1.0'
 
 #gem 'json'
 
@@ -14,7 +14,7 @@ gem 'therubyracer', group: :therubyracer
 
 gem 'uglifier', '>=1.3.0'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 
 # you may comment out the database driver(s) you will not be using.
 # This will prevent a native build of the driver. Building native drivers is not
@@ -29,8 +29,8 @@ gem "will_paginate"
 gem "acts_as_list"
 gem "aasm"
 gem "htmlentities"
-gem "swf_fu"
-gem "rails_autolink"
+gem "swf_fu", ">= 2.0.4"
+gem "rails_autolink", ">= 1.1.6"
 gem 'thin'
 gem 'paperclip'
 
@@ -59,9 +59,9 @@ group :development do
 end
 
 group :test do
-  gem "factory_girl_rails"
+  gem "factory_girl_rails", ">= 4.5.0"
   gem "capybara"
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", ">= 1.4.2", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"
   gem "mocha", :require => false
