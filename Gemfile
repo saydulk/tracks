@@ -61,12 +61,12 @@ end
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", ">= 2.1.0", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"
   gem "mocha", :require => false
 
-  gem "aruba", ">=0.5.4", :require => false
+  gem "aruba", ">= 0.6.1", :require => false
 
   gem "selenium-webdriver", '>=2.45'
 
