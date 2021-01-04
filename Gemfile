@@ -24,7 +24,7 @@ gem "sqlite3", group: :sqlite
 gem "mysql2", "~> 0.3.17", group: :mysql
 
 gem "RedCloth"
-gem "sanitize", ">=3.0.0"
+gem "sanitize", ">= 3.0.3"
 gem "will_paginate"
 gem "acts_as_list"
 gem "aasm"
@@ -60,8 +60,8 @@ end
 
 group :test do
   gem "factory_girl_rails"
-  gem "capybara"
-  gem "cucumber-rails", :require => false
+  gem "capybara", ">= 2.4.4"
+  gem "cucumber-rails", ">= 1.4.2", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"
   gem "mocha", :require => false
