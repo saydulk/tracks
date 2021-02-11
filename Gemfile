@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~>4.1.11'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 gem 'sass-rails', '~>4.0'
 gem 'coffee-rails', '~>4.0'
 
@@ -29,8 +29,8 @@ gem "will_paginate"
 gem "acts_as_list"
 gem "aasm"
 gem "htmlentities"
-gem "swf_fu"
-gem "rails_autolink"
+gem "swf_fu", ">= 2.0.4"
+gem "rails_autolink", ">= 1.1.6"
 gem 'thin'
 gem 'paperclip'
 
@@ -50,7 +50,7 @@ group :development do
   gem "spring-commands-cucumber"
   gem "yard"
 
-  gem 'tolk', '~> 1.6.0'
+  gem 'tolk', '~> 2.0.0'
 
   gem "bullet"
   gem "rack-mini-profiler"
@@ -61,7 +61,7 @@ end
 group :test do
   gem "factory_girl_rails"
   gem "capybara"
-  gem "cucumber-rails", :require => false
+  gem "cucumber-rails", ">= 1.4.3", :require => false
   gem "rspec-expectations"
   gem "database_cleaner"
   gem "mocha", :require => false
